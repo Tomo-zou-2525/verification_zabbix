@@ -8,7 +8,7 @@ modules_dirs=("server" "network")
 
 for dir in "${modules_dirs[@]}"; do
   mkdir -p "modules/$dir"
-  touch "modules/$dir/main.tf" "modules/$dir/providers.tf" "modules/$dir/terraform.tf"
+  touch "modules/$dir/main.tf" "modules/$dir/outputs.tf" "modules/$dir/terraform.tf" "modules/$dir/variables.tf"
 done
 
 echo "Terraformプロジェクトのディレクトリ構造とファイルが作成されました。"
